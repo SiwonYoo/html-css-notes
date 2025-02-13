@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>하이퍼링크</title>
+  </head>
+  <body>
+    <!-- body에 제목 다는 것 추천 -->
+    <h1>하이퍼링크</h1>
+    <h2>텍스트 링크</h2>
+    <a href="https://bootcamp.likelion.net/" target="_blank"
+      >멋쟁이 사자처럼 부트캠프 (target="_blank")</a
+    >
+    <br />
+
+    <!-- target="blank" -->
+    <a href="https://bootcamp.likelion.net/" target="blank"
+      >멋쟁이 사자처럼 부트캠프 (target="blank")</a
+    >
+    <a href="https://www.naver.com" target="blank">네이버 (target="blank")</a>
+    <br />
+
+    <!-- title -->
+    <a
+      href="https://www.naver.com"
+      title="네이버 사이트로 이동합니다. (새창)"
+      target="_blank"
+      >네이버</a
+    >
+    <br />
+
+    <!-- 이미지 링크 -->
+    <h2>이미지 링크</h2>
+    <a href="https://www.apple.com/"
+      ><img src="/src/assets/apple/apple_watch.jpeg" alt="애플워치" width="200"
+    /></a>
+    <!-- height 없이 width만 조정하면 원본 이미지 비율에 맞춰 조정 -->
+    <!-- 스크린리더 예시: 애플워지(alt) 링크(tag) 이미지(tag) -->
+    <br />
+
+    <!-- download 속성 : 누르면 다운로드 됨 -->
+    <a
+      href="/src/assets/pdf/google-seo-guide-ko.pdf"
+      download="google-seo-guide-ko"
+      >구글 SEO 가이드(download 속성 O)</a
+    >
+    <!-- download 속성 삭제 : 그냥 열림 -->
+    <a href="/src/assets/pdf/google-seo-guide-ko.pdf"
+      >구글 SEO 가이드(download 속성 X)</a
+    >
+
+    <h2>이메일 주소 또는 전화번호로 하이퍼 링크</h2>
+    <a href="mailto:seulbinim@gmail.com?subject=문의사항"
+      >seulbinim@gmail.com</a
+    >
+    <br />
+    <a href="tel:+821023456789">고객센터 010-2345-6789</a>
+
+    <hr />
+
+    <!-- 하이퍼링크 및 이미지 UI 예제 -->
+    <h2>하이퍼링크 및 이미지 UI 예제</h2>
+    <img
+      src="/src/assets/cafew/card-02-@1x.jpg"
+      alt="카페에서 작업하는 사람들"
+    />
+    <session>
+      <h1>RESPONSIVE WEB</h1>
+      <h1>DESIGN STRATEGIES</h1>
+      <h2>반응형 웹디자인 전략</h2>
+    </session>
+    <br />
+    <a href="/">강의 정보</a>
+
+    <hr />
+
+    <figure>
+      <img src="/src/assets/cafew/card-02-@1x.jpg" alt="" />
+      <figcaption>
+        <p>RESPONSIVE WEB<br />STRATEGIES</p>
+        <p>반응형 웹디자인 전략</p>
+        <a href="/">강의 정보</a>
+      </figcaption>
+    </figure>
+  </body>
+</html>

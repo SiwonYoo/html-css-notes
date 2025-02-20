@@ -1,0 +1,41 @@
+/* h1 {
+  font-size: 1em;
+} */
+
+body {
+  color: olive;
+}
+
+/* 우선순위 */
+
+/* 10점 */
+.ai {
+  /* background-color: orange; */
+}
+
+/* 2점 */
+body p {
+  /* background-color: yellow; */
+}
+
+/* 1점 */
+p {
+  /* background-color: lime !important; */
+}
+
+body h2 + p {
+  /* background-color: green; */
+}
+
+body p[class] {
+  /* background-color: lime; */
+}
+
+#ai {
+  /* background-color: pink; */
+  /* color: blue; */
+}
+
+.ai.copilot {
+  /* border: 10px dotted blue; */
+}

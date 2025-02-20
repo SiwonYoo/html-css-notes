@@ -1,0 +1,40 @@
+/* body {
+  font-family: 'Pretendard Variable';
+} */
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'SUIT', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* font-size 속성 - 글자 크기 */
+/* .size {
+  font-size: 24px;
+} */
+
+/* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
+.font-design {
+  font-size: 12x;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  font-variant: small-caps;
+  font-family: 'Pretendard variable', sans-serif;
+}
+
+/* font 단축 속성 */
+.font-design {
+  /* weight, style, variant: 1순위 */
+  /* 글자 크기와 폰트는 필수 */
+  /* font: bold italic small-caps 24px /1.5 'Pretendard variable'; */
+}

@@ -1,0 +1,67 @@
+body {
+  background-color: antiquewhite;
+}
+
+p {
+  color: red;
+  &:hover {
+    background-color: skyblue;
+  }
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+/* 클래스 선택자 */
+.like {
+  color: green;
+}
+
+/* id 선택자 */
+#lion {
+  color: blue;
+}
+
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+a[href^="https://"]
+{
+  text-decoration: none;
+}
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자 */
+/* a:link 방문한 적 없는 링크 */
+a:link {
+  color: black;
+}
+/* a:visited 방문한 적 있는 링크 */
+a:visited {
+  color: olive;
+}
+/* a:hover 마우스 hover */
+a:hover {
+  color: blue;
+}
+/* a:focus TAB으로 이동 */
+a:focus {
+  color: aqua;
+}
+/* a:active 클릭하는 순간 변경 */
+a:active {
+  background-color: white;
+}
+
+/* 가상 요소 선택자 */
+/* h1의 first-child를 만듦 */
+h1::before {
+  content: '멋사';
+}
+/* h1의 last-child를 만듦 */
+h1::after {
+  content: '13기';
+}

@@ -1,29 +1,24 @@
-/* body {
-  font-family: 'Pretendard Variable';
-} */
-
+/* html과 :root 중 하나만 적용하면 됨 */
+html {
+  font-size: 10px;
+}
 :root {
   font-size: 10px;
 }
 
-body {
-  font-family: 'SUIT', sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-}
-
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 /* font-size 속성 - 글자 크기 */
-/* .size {
-  font-size: 24px;
-} */
+.size {
+  font-family: 'SUIT';
+  font-weight: 100;
+}
 
 /* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
-.font-design {
+.font-design1 {
   font-size: 12x;
   font-weight: 300;
   font-style: italic;
@@ -33,8 +28,8 @@ h1 {
 }
 
 /* font 단축 속성 */
-.font-design {
+.font-design2 {
   /* weight, style, variant: 1순위 */
   /* 글자 크기와 폰트는 필수 */
-  /* font: bold italic small-caps 24px /1.5 'Pretendard variable'; */
+  font: bold italic small-caps 24px /1.5 'Pretendard variable';
 }

@@ -1,41 +1,49 @@
-/* h1 {
+h1 {
   font-size: 1em;
-} */
+}
 
 body {
   color: olive;
+}
+
+a {
+  color: inherit;
 }
 
 /* 우선순위 */
 
 /* 10점 */
 .ai {
-  /* background-color: orange; */
+  background-color: aqua;
 }
 
 /* 2점 */
 body p {
-  /* background-color: yellow; */
+  background-color: yellow;
 }
 
 /* 1점 */
 p {
-  /* background-color: lime !important; */
+  color: blueviolet !important;
 }
 
 body h2 + p {
-  /* background-color: green; */
+  text-align: right;
 }
 
 body p[class] {
-  /* background-color: lime; */
+  text-align: center;
 }
 
 #ai {
-  /* background-color: pink; */
-  /* color: blue; */
+  background-color: pink;
+  color: blue;
 }
 
 .ai.copilot {
-  /* border: 10px dotted blue; */
+  border: 10px dotted blue;
+}
+
+* {
+  background-color: lightcoral;
 }

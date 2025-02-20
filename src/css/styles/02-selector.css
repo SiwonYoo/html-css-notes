@@ -2,16 +2,6 @@ body {
   background-color: antiquewhite;
 }
 
-p {
-  color: red;
-  &:hover {
-    background-color: skyblue;
-  }
-  &:focus {
-    border: 10px solid red;
-  }
-}
-
 /* 클래스 선택자 */
 .like {
   color: green;
@@ -24,7 +14,7 @@ p {
 
 /* 속성 선택자 */
 [title] {
-  color: purple;
+  color: coral;
 }
 a[href^="https://"]
 {
@@ -53,15 +43,27 @@ a:focus {
 }
 /* a:active 클릭하는 순간 변경 */
 a:active {
-  background-color: white;
+  background-color: green;
+}
+
+p {
+  color: red;
+  &:hover {
+    background-color: skyblue;
+  }
+  &:focus {
+    border: 10px solid red;
+  }
 }
 
 /* 가상 요소 선택자 */
 /* h1의 first-child를 만듦 */
-h1::before {
-  content: '멋사';
+.pseudo::before {
+  content: 'BEFORE';
+  background-color: pink;
 }
 /* h1의 last-child를 만듦 */
-h1::after {
-  content: '13기';
+.pseudo::after {
+  content: 'AFTER';
+  background-color: pink;
 }

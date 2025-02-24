@@ -1,41 +1,87 @@
-/* 클래스 선택자 */
-/* 배경색상 */
-/* font-variant 속성으로 대문자 변환은 가능했지만 크기가 작은 대문자인 관계로 주석 처리 */
-/* text-transform 속성: 대문자로 변환한 값을 적용 */
-/* text-transform 속성을 .member-service에 선언함으로써 자식 요소 모두에 상속되도록 함 */
 .member-service {
   background-color: bisque;
-  /* font-variant: small-caps; */
   text-transform: uppercase;
-  /* font 단축 속성을 사용하여 글자 크기와 글꼴 지정 */
-  font: 1.125rem, suit, sans-serif;
+  font: suit, sans-serif;
+  line-height: 1.5;
+  font-size: 0px;
 }
 
-/* 태그 선택자 */
-/* 웹브라우저 스타일(밑줄)을 재정의 */
-/* 웹브라우저 링크 스타일(색상)을 재정의 (상속) */
+.item {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  background-color: pink;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* a 요소이면서 가상 요소 선택자 */
-a::before {
-  content: '|';
-}
-/* a 요소보다 우선순위 */
-a:first-child::before {
+.item.first::before {
   content: '';
 }
 
 .item::before {
   content: ':';
-}
-.first::before {
-  content: ':';
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-/* 구조 선택자를 이용할 때 */
-a:nth-child(n + 2)::before {
+/* item2 */
+ul {
+  list-style: none;
+  /* background-color: salmon; */
+}
+
+li {
+  display: inline;
+  font-size: 0px;
+}
+
+.item2 {
   background-color: pink;
+  font-size: 14px;
+  padding: 0 16px;
+}
+
+span {
+  background-color: aqua;
+  font-size: 14px;
+}
+
+/* UL 요소를 활용한 구조 예시 */
+.member-link {
+  background-color: aqua;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  font-size: 0;
+  text-align: right;
+
+  li {
+    display: inline-block;
+
+    * {
+      display: inline-block;
+      font-size: 0.875rem;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px;
+    background-color: pink;
+    /* padding-left: 8px;
+    padding-right: 8px */
+  }
+
+  span {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }

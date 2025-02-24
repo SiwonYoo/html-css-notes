@@ -1,0 +1,68 @@
+/* CSS 박스모델 */
+.like {
+  width: 150px;
+  /* 박스의 테두리 설정 - border */
+  /* border-top-width: 2px;
+  border-right-width: 4px;
+  border-bottom-width: 6px;
+  border-left-width: 8px; */
+  /* 단축표현 */
+  border-width: 5px 10px 15px 20px;
+  border-style: solid;
+  border-color: rgb(146, 220, 146);
+
+  /* 안쪽 여백 설정 - padding */
+  /* 값이 2개이면 {상하} {좌우} */
+  padding: 10px 30px;
+
+  /* 값이 1개면 {상하좌우} */
+  margin: 50px auto;
+}
+
+.like2 {
+  border-color: black;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  margin: 100px auto;
+}
+
+/* span */
+.lion {
+  border: 5px solid red;
+  display: inline-block;
+  /* display: block; */
+  /* display: inline; */
+}
+
+.bootcamp1 {
+  border: 5px solid blue;
+  width: 300px;
+  height: 100px;
+  padding: 100px;
+  box-sizing: content-box;
+}
+
+.bootcamp2 {
+  border: 5px solid red;
+  width: 300px;
+  height: 100px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.likelion {
+  width: 500px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid blue;
+  margin: 0 auto;
+  /* direction: rtl; */
+  direction: ltr;
+}
+.likelion2 {
+  border: 1px solid red;
+  width: 50px;
+  height: 50px;
+  margin: -20px;
+}

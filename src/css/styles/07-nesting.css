@@ -1,0 +1,15 @@
+.likelion {
+  .likelion__list {
+    list-style: none;
+    &:hover {
+      background-color: yellow;
+    }
+
+    .likelion__item {
+      color: green;
+      .likelion__link {
+        color: inherit;
+      }
+    }
+  }
+}

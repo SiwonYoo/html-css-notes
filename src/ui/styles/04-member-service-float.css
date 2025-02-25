@@ -1,0 +1,78 @@
+/* body {
+  font-family: 'SUIT', sans-serif;
+  font-size: 0;
+} */
+
+/* 맴버 서비스 */
+/* .member-service {
+  background: yellow;
+  display: inline-block;
+  padding: 0 8px;
+  text-transform: uppercase;
+
+  .item {
+    float: left;
+    font-size: 1rem;
+
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .item::before {
+    content: '|';
+    margin: 8px;
+    border: 1px solid red;
+  }
+  .first::before {
+    content: none;
+    margin: 0px;
+  }
+} */
+
+/* 멤버 링크 */
+/* .member-link {
+  display: flow-root;
+  background-color: antiquewhite;
+  padding: 0;
+  text-transform: uppercase;
+
+  li {
+    list-style: none;
+    float: left;
+    border: 1px solid red;
+
+    a {
+      font-size: 1rem;
+      margin: 0 8px;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+} */
+
+/* 예시 코드 */
+/* 스타일 초기화 */
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background: yellow;
+  display: flow-root;
+
+  a {
+    /* background: lime */
+  }
+}

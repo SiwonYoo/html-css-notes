@@ -1,0 +1,141 @@
+/* 전역 변수 정의 */
+@property --text-color {
+  syntax: '<color>';
+  /* 상속받지 않음 */
+  inherits: false;
+  initial-value: orange;
+}
+
+/* 전역 변수 정의 */
+:root {
+  /* 색상 팔레트 */
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+  --orange: orange;
+  --yellow: yellow;
+  --light-blue: aqua;
+
+  /* 주요 색상 */
+  --primary-color: var(--orange);
+  --secondary-color: var(--light-blue);
+  --accent-color: var(--yellow);
+  --border-color: var(--red);
+
+  --small: 0.75rem;
+  --medium: 0.875rem;
+  --default: 1rem;
+  --large: 1.125rem;
+}
+
+/* --secondary-color 속성이 없을 때 대안으로 설정 */
+h1 {
+  background-color: var(--secondary-color, red);
+}
+
+.container {
+  /* 지역 변수 정의 */
+  /* --secondary-color: #f0668f; */
+
+  h2 {
+    background-color: var(--secondary-color);
+  }
+}
+
+.text-card-1 {
+  /* 다른 변수 이름을 사용해서 선언 */
+  --bg-color: var(--green);
+  --border-color: var(--red);
+
+  p {
+    background-color: var(--bg-color);
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+.text-card-2 {
+  /* 다른 변수 이름을 사용해서 선언 */
+  --bg-color: var(--blue);
+  --border-color: var(--green);
+
+  p {
+    background-color: var(--bg-color);
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+:root {
+  --secondary-color: #f066c0;
+}
+
+p {
+  /* background-color: var(--secondary-color); */
+}
+
+.wrapper {
+  /* button 기본값 */
+  button {
+    --font-size: var(--default);
+    --bg-color: var(--green);
+    --text-color: var(--red);
+
+    font-size: var(--font-size, 1rem);
+    background-color: var(--bg-color, #fff);
+    color: var(--text-color, #000);
+  }
+
+  button.open {
+    /* 기본값 사용 */
+  }
+  button.close {
+    /* background color만 변경 */
+    background-color: purple;
+  }
+  button.popup {
+    /* text color만 변경 */
+    color: blue;
+  }
+  button.info {
+    /* background color와 font size 변경 */
+    background-color: pink;
+    font-size: 20px;
+  }
+}
+
+.container2 {
+  /* --text-color: var(--orange); */
+  color: var(--text-color);
+
+  .parent {
+    --text-color: red;
+
+    .child {
+      color: var(--text-color);
+    }
+  }
+}
+
+.lion {
+  color: red;
+  border: 1px solid green;
+  padding: 0.5em;
+
+  .parent {
+    padding: inherit;
+    /* padding을 확인하기 위해 margin:0으로 설정 */
+    margin: 0;
+    border: 1px solid pink;
+
+    .child {
+      color: black;
+      border: 1px solid blue;
+      padding: inherit;
+    }
+  }
+}

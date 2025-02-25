@@ -1,0 +1,43 @@
+body {
+  /* 배경 색상 */
+  background-color: hsl(100, 50%, 50%);
+  /* background-color: hsl(100, 20%, 50%); */
+  /* background-color: hsl(100, 50%, 70%); */
+
+  /* 배경 이미지 */
+  background-image: url('/src/assets/images/rabbit.png');
+
+  /* 배경 이미지 반복 여부 */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  background-repeat: no-repeat;
+
+  /* 배경 이미지 위치 */
+  /* background-position-x: 30px;
+  background-position-y: 40px; */
+  /* 단축 표기법 */
+  /* background-position: 30px 40px; */
+  /* 백분율 단위 사용 */
+  background-position: 50%;
+  /* min-height: 100vw; */
+
+  /* Scroll */
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
+
+  /* 배경 크기 */
+  /* background-size: contain; */
+  background-size: cover;
+
+  /* 단축 표기법으로 줄여서 선언 */
+  background:
+    url(/src/assets/images/cloud.png) repeat-x 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    pink;
+
+  /* background:
+    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    linear-gradient(red, green),
+    pink; */
+}

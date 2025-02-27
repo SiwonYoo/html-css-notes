@@ -1,0 +1,50 @@
+/* 기본적으로 적용될 배경색 - blue */
+/* body {
+  background: yellow;
+} */
+
+/* 뷰포트 크기에 따라 적용될 배경색 - pink */
+/* @media (min-width: 600px) {
+  body {
+    background: pink;
+  }
+} */
+
+/* 가로 보기 모드에서 적용될 배경색 - orange */
+/* @media (orientation: landscape) {
+  body {
+    background-color: orange;
+  }
+} */
+
+/* 중첩으로 표현 */
+/* body {
+  background: yellow;
+
+  @media (min-width: 600px) {
+    background: pink;
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1000px) {
+    background-color: orange;
+    font-size: 3rem;
+  }
+} */
+
+/* 모든 디바이스에 글자크기를 유연하게 설정 - vw 단위 */
+body {
+  background: yellow;
+  /* font-size: 2vw; */
+
+  /* clamp() 함수를 이용해서 글자크기를 유연하게 설정 가능 */
+  font-size: clamp(0.75rem, 2vw, 2rem);
+
+  @media (min-width: 600px) {
+    background: pink;
+  }
+
+  @media (min-width: 1000px) {
+    background-color: orange;
+  }
+}

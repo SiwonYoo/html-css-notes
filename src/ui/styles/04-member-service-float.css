@@ -1,19 +1,21 @@
 /* body {
   font-family: 'SUIT', sans-serif;
   font-size: 0;
+}
+
+h1,
+h2 {
+  font-size: large;
 } */
 
-/* 맴버 서비스 */
+/* 1. 맴버 서비스 - 가상 요소 선택자 이용 */
 /* .member-service {
-  background: yellow;
   display: inline-block;
-  padding: 0 8px;
   text-transform: uppercase;
+  font-size: 1rem;
 
   .item {
     float: left;
-    font-size: 1rem;
-
     text-decoration: none;
     color: inherit;
   }
@@ -21,7 +23,6 @@
   .item::before {
     content: '|';
     margin: 8px;
-    border: 1px solid red;
   }
   .first::before {
     content: none;
@@ -29,23 +30,24 @@
   }
 } */
 
-/* 멤버 링크 */
+/* 2. 멤버 링크 - 리스트 이용 */
 /* .member-link {
-  display: flow-root;
-  background-color: antiquewhite;
+  display: inline-block;
   padding: 0;
   text-transform: uppercase;
 
   li {
     list-style: none;
     float: left;
-    border: 1px solid red;
 
     a {
-      font-size: 1rem;
-      margin: 0 8px;
       text-decoration: none;
       color: inherit;
+      font-size: 1rem;
+    }
+    span {
+      margin: 0 0.5rem;
+      font-size: 1rem;
     }
   }
 } */
@@ -63,6 +65,12 @@ a {
   color: inherit;
 }
 
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
 body {
   font-family: 'SUIT', sans-serif;
 }
@@ -73,6 +81,36 @@ body {
   display: flow-root;
 
   a {
-    /* background: lime */
+    background-color: lime;
+    float: left;
+    text-transform: uppercase;
+  }
+
+  a:nth-child(n + 2)::before {
+    background-color: red;
+    content: '|';
+    margin: 0 0.5em;
+  }
+}
+
+/* 멤버 링크 */
+.member-link {
+  border: 1px solid red;
+  display: flow-root;
+
+  li {
+    background: skyblue;
+    float: left;
+
+    span {
+      background: pink;
+      float: left;
+      margin: 0 0.5em;
+    }
+    a {
+      background: orange;
+      float: left;
+      text-transform: uppercase;
+    }
   }
 }

@@ -1,0 +1,86 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+
+/* 플렉스를 활용한 반응형 레이아웃 */
+.container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* > 직계 자식 : 위험해서 권장하지는 않음 */
+    > * {
+      /* 아래 3가지 방법 중 하나 사용 (가로 크기 100% */
+      /* inline-size: 100%; */
+      /* flex-basis: 100%; */
+      /* width: 100%; */
+    }
+
+    .header,
+    .navigation,
+    .footer {
+      width: 100%;
+      inline-size: 100%;
+    }
+
+    .content,
+    .sidebar {
+      width: 50%;
+      inline-size: 50%;
+      height: 65vh;
+      block-size: 65vh;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .navigation,
+    .sidebar {
+      width: 25%;
+      inline-size: 25;
+      height: 65vh;
+      block-size: 65vh;
+    }
+  }
+}
+
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
+
+/* 내비게이션 */
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
+
+/* 메인 콘텐츠 */
+.content {
+  background: var(--pastel-aqua);
+  height: 40vh;
+}
+
+/* 사이드 바 */
+.sidebar {
+  background: var(--pastel-yellow);
+  height: 25vh;
+}
+
+/* 푸터 */
+.footer {
+  background: var(--pastel-lavender);
+  height: 10vh;
+}
+
+/* 방법 1 */
+/* .wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+
+    .content,
+    .sidebar {
+      flex: 1 0 0;
+      block-size: 65vh;
+    }
+  }
+} */

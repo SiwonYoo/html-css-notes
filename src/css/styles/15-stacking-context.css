@@ -1,0 +1,96 @@
+@import url(/src/common/best-reset.css);
+@import url(/src/common/theme.css);
+@import url(/src/ui/components/avatar/avatar.css);
+
+body {
+  margin: 50px;
+}
+h1 {
+  margin-block: 0;
+}
+/* Stacking context */
+.case-01 {
+  /* background: yellow; */
+  display: flex;
+  flex-flow: row nowrap;
+
+  button {
+    margin-right: -20px;
+
+    position: static !important;
+    /* position: relative; */
+
+    /* rotate 적용에 필요: 적용 과정(전이)을 보여줌 */
+    /* transition이 없으면 적용 결과만 보여줌 */
+    /* transition: rotate 500ms; */
+
+    &:hover,
+    &:focus {
+      /* 순서: 겹치는 아바타의 순서를 제어하기 위해 0보다 큰 값 지정 */
+      z-index: 10;
+
+      /* 크기 */
+      /* transform: scale(1.5); */
+      /* 위치: transform에서 사용했던 함수들을 속성으로 만듦 */
+      /* translate: 0 -20px; */
+
+      /* 투명도 */
+      /* opacity: 0.8; */
+
+      /* rotate : transition도 함께 적용해야 함 */
+      /* turn(바퀴) 또는 deg(각도) 사용 */
+      /* rotate: 3turn; */
+      /* rotate: 30deg; */
+
+      /* filter */
+      /* 블러 기능 */
+      /* filter: blur(5px); */
+      /* filter: none; */
+      /* 흑백 사진 */
+      /* filter: grayscale(100%); */
+      /* filter: sepia(60%); */
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+
+/* Transition */
+/* case 02 */
+.case-02 {
+  margin-block-start: 20px;
+  display: flex;
+  gap: 20px;
+
+  [class^='area'] {
+    inline-size: 100px;
+    block-size: 100px;
+    border: 1px solid currentColor;
+    text-align: center;
+    align-content: center;
+    background: var(--pastel-lavender);
+
+    /* 변환 속성 */
+    transition-property: background, border-radius;
+    /* 변환 시간 */
+    transition-duration: 2s, 1s;
+    /* 지연 시간 */
+    transition-delay: 0s, 2s;
+    /* 가속과 감속 조정 : ease-out, ease-in, default, ease-in-out */
+    transition-timing-function: ease;
+
+    /* transition 관련 단축 속성 */
+    transition:
+      background 2s 0s ease,
+      border-radius 1s 2s ease;
+
+    /* 모든 trasition에 적용 */
+    transition: all 2s;
+
+    &:hover {
+      background: var(--pastel-orange);
+      border-radius: 50%;
+    }
+  }
+}

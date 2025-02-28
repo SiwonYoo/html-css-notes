@@ -1,0 +1,60 @@
+.case-01 {
+  border: 1px solid currentColor;
+  color: green;
+  overflow: auto;
+
+  /* 가로 크기를 width 속성이 아닌 논리 속성으로 지정 */
+  /* width: 400px; */
+  inline-size: 400px;
+
+  /* 세로 크기를 height 속성이 아닌 논리 속성으로 지정 */
+  /* height: 100px; */
+  block-size: 100px;
+
+  /* padding-left: 20px;
+  padding-right: 50px; */
+  /* padding과 margin을 논리 속성으로 지정 */
+  /* x축 padding */
+  /* padding-inline: 20px; */
+  /* y축 padding */
+  /* padding-block: 10px; */
+  /* x축 margin */
+  /* margin-inline: 30px; */
+  /* y축 margin */
+  /* margin-block: 50px; */
+
+  /* 좌->우 */
+  /* writing-mode: horizontal-tb; */
+  /* 상->하, 우->좌 */
+  writing-mode: vertical-rl;
+  /* 상->하, 좌->우 */
+  /* writing-mode: vertical-lr; */
+
+  /* padding-left: 20px;
+  padding-right: 50px; */
+
+  /* 논리 속성 */
+  padding-inline-start: 50px;
+  padding-inline-end: 100px;
+
+  /* padding-block-start: 50px;
+  padding-block-end: 100px; */
+
+  /* float: left 속성을 논리 속성으로 지정 */
+  float: inline-start;
+
+  /* position의 offset을 지정할 때 논리 속성을 사용한 경우 */
+  .example {
+    position: absolute; /* 변경 없음 */
+    inset-block-start: 0; /* top: 0; */
+    inset-inline-start: 0; /* left: 0; */
+    inset-inline-end: 0; /* right: 0; */
+    inset-block-end: 0; /* bottom: 0; */
+  }
+
+  /* position의 offset을 지정할 때 논리 속성 중 단축 표기법을 사용한 경우 */
+  .example {
+    position: absolute; /* 변경 없음 */
+    inset: 0;
+  }
+}

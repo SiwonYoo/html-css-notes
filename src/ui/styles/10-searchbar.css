@@ -1,0 +1,114 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/a11y.css';
+@import 'src/common/base.css';
+@import '/src/common/theme.css';
+
+body {
+  padding: 10px;
+}
+
+/* 컴포넌트 */
+/* 로고 컴포넌트 */
+.brand {
+  a.logo {
+    display: block;
+  }
+}
+
+/* 버튼(Circle) 컴포넌트 */
+.button-circle {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: #23e97f linear-gradient(180deg, #23e97f, #00dcc9 100%);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    /* left */
+    inset-inline-start: 50%;
+    /* top */
+    inset-block-start: 50%;
+    /* 시작점이 가운데로 옴 */
+    /* translate를 이용하여 위치 조정 */
+    translate: -50% -50%;
+
+    inline-size: 32%;
+    block-size: 32%;
+
+    border-radius: 50%;
+    background-color: white;
+  }
+}
+
+/* 입력 서식 컴포넌트 */
+.input {
+  background: yellow;
+  display: flex;
+  flex-flow: row nowrap;
+
+  input {
+    block-size: 1.5rem;
+    border: 1px solid var(--pastel-gray);
+    font-size: 0.875rem;
+    padding: 0.125rem 0.5rem;
+
+    /* 유연하게 만들기 */
+    /* inline-size: 100%; */
+    /* flex 이용 (flex-grow) */
+    flex: 1 0 0;
+  }
+}
+
+/* 검색 폼 */
+.form-search {
+  fieldset {
+    border: 0;
+    /* 브라우저 오류 문제로 추천하지 않음 -> 따로 묶어서 사용하기(.searh-wrapper) */
+    /* display: flex; */
+  }
+
+  .search-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+
+    .input {
+      flex: 1 0 0;
+    }
+  }
+}
+
+/* 검색 바(searchbar) */
+.searchbar {
+  margin-block-start: 20px;
+  /* background: yellow; */
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.75rem;
+  border: 1px solid #03cc5c;
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+  border-radius: 3rem;
+
+  &:focus-within {
+    /* box-shadow: x y blur spread color */
+    box-shadow: 0 4px 4px 0 rgba(68, 131, 63, 0.15);
+  }
+
+  .form-search {
+    margin-block-start: 0;
+    flex: 1 0 0;
+  }
+
+  input {
+    border: 0;
+
+    &:focus {
+      /* focus 시 어떤 서식이 선택되었는지 시각적으로 구분할 수 있는 다른 대안(디자인 수단)이 있는 경우 outline을 제거해도 좋지만 그렇지 않은 경우 절대로 outline을 없애서는 안 됨!! */
+      outline: none;
+    }
+  }
+}

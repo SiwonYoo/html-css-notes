@@ -1,0 +1,153 @@
+@import '/src/common/theme.css';
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'SUIT', sans-serif;
+}
+
+/* flex */
+.case-01 {
+  border: 1px solid red;
+  padding: 10px;
+  inline-size: 422px;
+
+  /* .case-01: flex container 역할 */
+  display: flex;
+
+  /* item을 column 방향으로 배치 (normal flow와 동일 */
+  /* flex-direction: column; */
+  flex-direction: row;
+  /* 줄바꿈여부 설정 */
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+
+  /* flex-direction 속성과 flex-wrap 속성을 단축해서 지정할 때 */
+  flex-flow: row nowrap;
+
+  /* justify-content, align-items 확인 */
+  width: 600px;
+  height: 400px;
+  /* row일 때와 column일 때 확인해보기 */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: start;
+  align-items: end;
+  align-items: center; */
+
+  /* align-content 확인하기 */
+  flex-flow: row wrap;
+  /* align-items: baseline; */
+  /* align-content: center; */
+  /* align-items: center; */
+  justify-content: space-between;
+
+  /* gap 속성 */
+  /* align-items: center;
+  align-content: center; */
+  /* row-gap: 20px; */
+  /* column-gap: 20px; */
+
+  /* flex item: flex container의 직계 자식 */
+  /* *= : 다음 문자열이 포함되어 있음 */
+  [class*='item'] {
+    /* margin-block: 10px; */
+
+    background: var(--pastel-yellow);
+    border: 1px solid black;
+
+    /* 논리 단위 사용 */
+    /* inline-size: 100px;
+    block-size: 100px; */
+
+    /* text-align: 블록 요소에 주는 것 (가로 가운데 정렬) */
+    text-align: center;
+
+    /* 기존에 세로 기준 가운데 정렬을 지원하지 않을 때 사용하던 트릭 */
+    /* line-height: 100px; */
+    align-content: center;
+  }
+
+  .item1 {
+    font-size: 48px;
+  }
+  .item2 {
+  }
+}
+
+/* 플렉스 아이템 관련 속성 */
+.case-02 {
+  border: 1px solid green;
+  width: 502px;
+  inline-size: 502px;
+
+  display: flex;
+  flex-flow: row nowrap;
+
+  [class^='item'] {
+    border: 1px solid currentColor;
+    /* width: 100px;
+    inline-size: 100px;
+    height: 100px;
+    block-size: 100px; */
+    text-align: center;
+    align-content: center;
+    /* flex-basis: 100px; */
+    /* width: 200px; */
+    /* height: 300px; */
+
+    /* flex-basis: 0;
+    flex-grow: 0.1; */
+    /* flex-basis: 200px;
+    flex-shrink: 0; */
+
+    /* flex-grow, flex-shrink, flex-basis 속성의 단축 표기 */
+    flex: 0 1 200px;
+  }
+
+  .item3 {
+    /* order: 1; */
+  }
+  .item1,
+  .item2,
+  .item4 {
+    /* order: 2; */
+  }
+
+  .item2,
+  .item4 {
+    /* order: -1; */
+  }
+  div:nth-child(odd) {
+    /* order: -1; */
+  }
+  div:nth-child(even) {
+    /* order: -1; */
+    /* flex-grow: 1; */
+    /* flex-grow: 2; */
+  }
+}
+
+.case-03 {
+  border: 1px solid red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  [class*='item'] {
+    margin-block: 10px;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,35 @@
+@import '/src/common/mini-reset.css';
+
+:root {
+  /* 색상 */
+  --green: #22be61;
+  --silver: #929b90;
+  --brown: #e3a368;
+
+  /* 여백 */
+  /* 10px */
+  --spacing-10: 0.625rem;
+  /* 20px */
+  --spacing-20: 1.25rem;
+  /* 70px */
+  --spacing-70: 4.375rem;
+
+  /* 글자 크기 */
+  /* 18px */
+  --large: 1.125rem;
+  /* 14px */
+  --medium: 0.875rem;
+  /* 12px */
+  --small: 0.75rem;
+}
+
+body {
+  margin: 50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+/* 알림 컨테이너 */
+/* 컴포넌트를 만들고 배치를 위해 만든 컨테이너에 갭을 주는 방향으로 컴포넌트 간 여백을 줘야 함 (플렉스는 아직 배우지 않음) */

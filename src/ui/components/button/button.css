@@ -14,6 +14,7 @@
   padding: var(--spacing);
   color: var(--text-color);
   background: var(--fill-color);
+  /* justify-content: center; */
 
   /* 비활성화 스타일 */
   &:disabled {

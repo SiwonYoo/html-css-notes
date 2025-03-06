@@ -1,0 +1,71 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.container {
+  background: var(--pastel-lavender);
+  padding: 1em;
+
+  .case {
+    border: 1px solid red;
+    /* margin-block: 20px; */
+  }
+
+  /* case-01. column-width */
+  .case-01 {
+    column-width: 15rem;
+    column-rule: 1px solid red;
+    column-gap: 2rem;
+  }
+
+  /* case-02. column-count */
+  .case-02 {
+    column-count: 4;
+    column-rule: 2px dotted green;
+
+    span {
+      display: block;
+      column-span: all;
+      background: var(--pastel-blue);
+      color: white;
+      padding: 0.5em;
+    }
+  }
+
+  /* case-03. columns 단축속성에 column-width 선언 */
+  .case-03 {
+    columns: 15rem; /* column-width: 15rem; */
+    column-rule: 3px double blue;
+  }
+
+  /* case-04. columns 단축속성에 column-count 선언 */
+  .case-04 {
+    columns: 4; /* column-count: 4; */
+  }
+
+  /* case-05. column-fill:balance */
+  .case-05 {
+    height: 100px;
+    column-count: 2;
+    column-fill: balance;
+  }
+  /* case-06. column-fill:auto */
+  .case-06 {
+    height: 100px;
+    column-count: 2;
+    column-fill: auto;
+  }
+}
+
+/* 여기 확인하기 */
+.wrapper {
+  background: var(--pastel-lemon);
+  padding: 1em;
+  columns: 3;
+
+  .case-02 {
+    /* break-before: column; */
+    border: 1px solid red;
+  }
+}

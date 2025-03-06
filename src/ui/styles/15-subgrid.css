@@ -1,0 +1,59 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+body {
+  margin: 20px;
+}
+
+.card {
+  border: 1px solid var(--pastel-gray);
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+  box-shadow: 0 0 8px 1px var(--pastel-gray);
+
+  .subject {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .thumbnail {
+    order: -1;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 0;
+      aspect-ratio: 3/2;
+    }
+  }
+
+  .content {
+    line-height: 1.5;
+  }
+
+  .more {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--pastel-blue);
+    color: white;
+    padding: 1em;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto 1.5rem auto auto;
+  gap: 20px;
+
+  .card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+  }
+}

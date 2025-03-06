@@ -1,0 +1,77 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+body {
+  margin: 20px;
+  /* background-color: #010101;
+  color: wheat; */
+}
+
+/* Select UI */
+.select-box {
+  display: inline-block;
+  border: 1px solid #ababab;
+  border-radius: 2px;
+  width: 93px;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 3;
+  align-items: center;
+  justify-items: center;
+
+  .select-lang {
+    padding: 12px 8px;
+    grid-area: 1 / 1 / 2 / 4;
+    background: none;
+    border: none;
+    color: #ababab;
+    font-size: 16px;
+    appearance: none;
+  }
+
+  .global-img {
+    width: 16px;
+    height: 16px;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .triangle-img {
+    width: 16px;
+    height: 16px;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+}
+
+/* 예시 코드 */
+.select {
+  display: inline-grid;
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  img,
+  select {
+    grid-area: 1/1/2/2;
+  }
+
+  img {
+    margin: 0 0.5em;
+    pointer-events: none;
+  }
+
+  select {
+    border: 0;
+    background: transparent;
+    appearance: none;
+    padding: 0.5em 1.75em;
+  }
+
+  .icon-global {
+    place-self: center start;
+  }
+
+  .icon-triangle {
+    place-self: center end;
+  }
+}

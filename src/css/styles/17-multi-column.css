@@ -26,7 +26,7 @@
 
     span {
       display: block;
-      column-span: all;
+      column-span: none;
       background: var(--pastel-blue);
       color: white;
       padding: 0.5em;
@@ -65,7 +65,7 @@
   columns: 3;
 
   .case-02 {
-    /* break-before: column; */
+    break-before: column;
     border: 1px solid red;
   }
 }

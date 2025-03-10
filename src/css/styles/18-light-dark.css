@@ -1,0 +1,26 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  --light-color: var(--pastel-blue);
+  --dark-color: var(--pastel-lilac);
+
+  /* background: var(--pastel-coral); */
+  color: #000;
+  margin: 58px;
+
+  @media (prefers-color-scheme: dark) {
+    /* background: var(--pastel-blue); */
+    color: #fff;
+  }
+
+  h1 {
+    color: light-dark(var(--light-color), var(--dark-color));
+  }
+}

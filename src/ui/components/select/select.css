@@ -11,7 +11,7 @@ body {
 
 /* Select UI */
 .select-box {
-  display: inline-block;
+  display: inline-block; /*아래 display:grid에 의해 무시됨 */
   border: 1px solid #ababab;
   border-radius: 2px;
   width: 93px;

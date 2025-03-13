@@ -1,0 +1,71 @@
+/* @layer module, state; */
+
+/* @layer state {
+  .alert {
+    background-color: brown;
+  }
+  p {
+    border: medium solid limegreen;
+  }
+}
+
+@layer module {
+  .alert {
+    border: medium solid violet;
+    background-color: yellow;
+    color: white;
+  }
+} */
+
+/* 
+p.alert {
+  background: green;
+} */
+
+/* @layer module, state;
+
+@layer {
+  p.alert {
+    background: yellow;
+  }
+}
+
+@layer state {
+  p.alert {
+    background-color: red;
+  }
+}
+
+@layer module {
+  p.alert {
+    background: orange;
+  }
+} */
+
+@layer {
+  p.alert { background: yellow; }
+}
+
+@layer module, state, test;
+
+@layer state {
+  p.alert { background: red; }
+}
+
+@layer test {
+  p.alert { background: blue; }
+}
+
+@layer module {
+  p.alert { background: orange; }
+}
+
+@layer test, state;
+
+@layer state {
+  p.alert { background: red; }
+}
+
+@layer test {
+  p.alert { background: blue; }
+}

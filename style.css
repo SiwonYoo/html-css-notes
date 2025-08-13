@@ -1,6 +1,6 @@
-@import url('/src/common/mini-reset.css');
-@import url(/src/common/base.css);
-@import url('/src/common/theme.css');
+@import url('src/common/mini-reset.css');
+@import url('src/common/base.css');
+@import url('src/common/theme.css');
 
 body {
   margin: 20px;

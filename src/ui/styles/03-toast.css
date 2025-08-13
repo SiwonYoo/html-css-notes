@@ -66,7 +66,7 @@ h1 {
   }
 
   &.plant-care {
-    background-image: url(/src/assets/svg/pot.svg);
+    background-image: url(../../../src/assets/svg/pot.svg);
 
     h2,
     time {
@@ -75,7 +75,7 @@ h1 {
   }
 
   &.mealtime {
-    background-image: url(/src/assets/svg/meal.svg);
+    background-image: url(../../../src/assets/svg/meal.svg);
 
     strong,
     time {

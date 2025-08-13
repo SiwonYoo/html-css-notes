@@ -52,7 +52,7 @@
   } */
 
   label.bg-img {
-    background: url(/src/assets/naver/unchecked.svg) no-repeat;
+    background: url(../../../src/assets/naver/unchecked.svg) no-repeat;
     /* padding-left: 2rem; */
     padding-inline-start: 1.875rem;
     /* 들여쓰기 */
@@ -62,7 +62,7 @@
   }
 
   input:checked + label {
-    background-image: url(/src/assets/naver/checked.svg);
+    background-image: url(../../../src/assets/naver/checked.svg);
   }
 }
 

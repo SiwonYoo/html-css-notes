@@ -1,28 +1,23 @@
-###### Likelion Front-end School
+# HTML/CSS 학습 기록
 
-# HTML/CSS
+이 레포지토리는 HTML/CSS 수업 내용을 정리하고 실습한 예제를 모아둔 자료입니다.  
+아래 링크에서 **모든 실습 예제**를 확인할 수 있습니다.
 
-멋쟁이 사자처럼 프론트엔드 스쿨 HTML/CSS 학습 저장소
+---
 
-## 학습 저장소 복제하기
+🌐 [HTML/CSS 학습 기록 바로가기](https://siwonyoo.github.io/html-css-notes/)
 
-```sh
-git clone https://github.com/seulbinim/ssam-html-css.git
-```
+- 페이지에서 HTML, CSS, UI 예제, 컴포넌트를 카테고리별로 탐색할 수 있습니다.
+- 각 링크를 클릭하면 개별 예제 페이지로 이동 가능합니다.
 
-## 최신 커밋을 로컬 저장소로 가져오기
+---
 
-```sh
-git pull origin main
-```
+### 💻 사용 방법
 
-## 의존성 패키지 설치하기
+1. 위 링크 클릭하여 브라우저에서 열기
+2. 인덱스 페이지에서 원하는 실습 항목 선택
+3. HTML/CSS 예제 확인 및 학습
 
-```sh
-npm install
-```
-또는
-```sh
-npm i
-```
-**패키지를 설치하기 전 반드시 git pull 명령을 사용하여 최신 내용으로 업데이트 필요**
+<br/>
+
+> 이 레포지토리는 **HTML/CSS 학습 기록**으로, 수업 내용을 빠르게 찾아보고 확인하는 용도로 제작되었습니다.

@@ -1,5 +1,5 @@
-@import '/src/common/best-reset.css';
-@import '/src/common/theme.css';
+@import '../../common/best-reset.css';
+@import '../../common/theme.css';
 
 /* 반응형 레이아웃 */
 /* 헤더 */

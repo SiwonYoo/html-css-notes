@@ -1,5 +1,5 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
+@import '../../common/modern-reset.css';
+@import '../../common/theme.css';
 @import '/src/ui/components/avatar/avatar.css';
 
 body {

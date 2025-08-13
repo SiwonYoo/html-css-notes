@@ -1,7 +1,7 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/login-theme.css';
-@import '/src/common/a11y.css';
-@import '/src/common/base.css';
+@import '../../common/modern-reset.css';
+@import '../../common/login-theme.css';
+@import '../../common/a11y.css';
+@import '../../common/base.css';
 
 /* 체크박스 (배경이미지) */
 .checkbox {

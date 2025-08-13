@@ -1,6 +1,6 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
-@import '/src/common/base.css';
+@import '../../common/modern-reset.css';
+@import '../../common/theme.css';
+@import '../../common/base.css';
 
 /* 헤더 */
 .header {

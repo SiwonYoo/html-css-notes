@@ -1,7 +1,7 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
-@import '/src/common/a11y.css';
-@import '/src/common/base.css';
+@import '../../common/modern-reset.css';
+@import '../../common/theme.css';
+@import '../../common/a11y.css';
+@import '../../common/base.css';
 @import '/src/ui/components/button/button.css';
 
 :root {

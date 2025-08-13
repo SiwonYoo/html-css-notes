@@ -1,5 +1,5 @@
-@import '/src/common/best-reset.css';
-@import '/src/common/theme.css';
+@import '../../common/best-reset.css';
+@import '../../common/theme.css';
 
 /* 테이블 스타일링 */
 .table-wrapper {

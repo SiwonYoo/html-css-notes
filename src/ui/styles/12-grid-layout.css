@@ -1,5 +1,5 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/theme.css';
 
 /* 헤더 */
 .header {

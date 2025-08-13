@@ -1,4 +1,4 @@
-@import '/src/common/theme.css';
+@import '../../../src/common/theme.css';
 
 body *,
 body *::before,

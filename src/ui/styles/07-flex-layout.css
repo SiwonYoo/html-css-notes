@@ -1,5 +1,5 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/theme.css';
 
 /* 플렉스를 활용한 반응형 레이아웃 */
 .container {

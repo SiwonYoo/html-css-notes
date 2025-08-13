@@ -1,4 +1,4 @@
-@import '/src/ui/components/avatar/avatar.css';
+@import '../../../src/ui/components/avatar/avatar.css';
 
 /* 아바타 리스트 */
 /* case 01 - inline-block */

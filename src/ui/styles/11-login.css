@@ -1,14 +1,14 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/login-theme.css';
-@import '/src/common/a11y.css';
-@import '/src/common/base.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/login-theme.css';
+@import '../../../src/common/a11y.css';
+@import '../../../src/common/base.css';
 
-@import '/src/ui/components/logo/logo.css';
-@import '/src/ui/components/input/input.css';
-@import '/src/ui/components/checkbox/checkbox.css';
-@import '/src/ui/components/text-link/text-link.css';
-@import '/src/ui/components/switch/switch.css';
-@import '/src/ui/components/button/button.css';
+@import '../../../src/ui/components/logo/logo.css';
+@import '../../../src/ui/components/input/input.css';
+@import '../../../src/ui/components/checkbox/checkbox.css';
+@import '../../../src/ui/components/text-link/text-link.css';
+@import '../../../src/ui/components/switch/switch.css';
+@import '../../../src/ui/components/button/button.css';
 
 .container {
   padding: 0 var(--spacing-4);

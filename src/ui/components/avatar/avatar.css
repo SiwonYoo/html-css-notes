@@ -1,5 +1,5 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/a11y.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/a11y.css';
 
 /* 아바타 컴포넌트 */
 /* 인터랙션이 없는 이미지 컴포넌트 */

@@ -1,7 +1,7 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/login-theme.css';
-@import '/src/common/a11y.css';
-@import '/src/common/base.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/login-theme.css';
+@import '../../../src/common/a11y.css';
+@import '../../../src/common/base.css';
 
 /* 컴포넌트 테스트용 */
 /* form {

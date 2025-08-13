@@ -1,6 +1,6 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
-@import '/src/ui/components/avatar/avatar.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/theme.css';
+@import '../../../src/ui/components/avatar/avatar.css';
 
 body {
   margin: 20px;

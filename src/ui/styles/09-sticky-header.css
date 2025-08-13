@@ -1,5 +1,5 @@
-@import '/src/common/modern-reset.css';
-@import '/src/common/theme.css';
+@import '../../../src/common/modern-reset.css';
+@import '../../../src/common/theme.css';
 
 body {
   margin-block-end: 1200px;

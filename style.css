@@ -1,0 +1,49 @@
+@import url('/src/common/mini-reset.css');
+@import url(/src/common/base.css);
+@import url('/src/common/theme.css');
+
+body {
+  margin: 20px;
+}
+
+h1 {
+  margin-block: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+
+    border: var(--pastel-purple) 1px solid;
+    border-radius: 10px;
+
+    h2 {
+      text-align: center;
+      margin-block: 10px;
+    }
+
+    ul {
+      display: contents;
+
+      & > *:hover {
+        color: #121212;
+        font-weight: bold;
+      }
+    }
+  }
+}

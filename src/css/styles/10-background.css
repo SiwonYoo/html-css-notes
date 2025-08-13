@@ -5,7 +5,7 @@ body {
   /* background-color: hsl(100, 50%, 70%); */
 
   /* 배경 이미지 */
-  background-image: url('/src/assets/images/rabbit.png');
+  background-image: url('../../assets/images/rabbit.png');
 
   /* 배경 이미지 반복 여부 */
   /* background-repeat: repeat-x; */
@@ -31,13 +31,13 @@ body {
 
   /* 단축 표기법으로 줄여서 선언 */
   background:
-    url(/src/assets/images/cloud.png) repeat-x 0 100px fixed,
-    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    url(../../assets/images/cloud.png) repeat-x 0 100px fixed,
+    url(../../assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
     pink;
 
   /* background:
-    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
-    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    url(../../assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(../../assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
     linear-gradient(red, green),
     pink; */
 }

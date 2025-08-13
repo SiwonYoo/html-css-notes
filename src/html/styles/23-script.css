@@ -46,11 +46,11 @@ body {
 
 .card-face-black {
   border: 2px solid #000;
-  background: url('/src/assets/thumbnail/likelion-black.png');
+  background: url('../../assets/thumbnail/likelion-black.png');
 }
 
 .card-face-white {
   border: 2px solid #aaa;
-  background: url('/src/assets/thumbnail/likelion-white.png');
+  background: url('thumbnail/likelion-white.png');
   transform: rotateY(180deg);
 }
